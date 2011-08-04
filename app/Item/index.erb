@@ -1,0 +1,26 @@
+<div class="pageTitle">
+  <h1>Items</h1>
+</div>
+
+<div class="toolbar">
+  <div class="leftItem backButton">
+    <a href="#">Back</a>
+  </div>
+  <div class="rightItem regularButton">
+    <a class="button" href="<%= url_for :action => :new %>">New</a>
+  </div>
+</div>
+
+<div class="content">
+  <ul>
+    <% @items.each do |item| %>
+    
+        <li>
+          <a href="<%= url_for :action => :show, :id => item.object %>">
+            <span class="title"><%= item.name %></span><span class="disclosure_indicator"></span>
+          </a>
+        </li>
+    
+    <% end %>
+  </ul>
+</div>

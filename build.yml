@@ -1,0 +1,21 @@
+sdk: "/Users/sebastianchoren/.rvm/gems/ruby-1.8.7-p352/gems/rhodes-3.0.2"
+sdkversion: 3.0.1
+name: BackSample
+version: 1.0
+vendor: rhomobile
+build: debug
+bbver: 4.6
+wmsdk: "Windows Mobile 6 Professional SDK (ARMV4I)"
+applog: rholog.txt
+iphone:
+  configuration: Debug
+  sdk: iphonesimulator4.3
+  provisionprofile:
+  codesignidentity:
+  entitlements:
+  BundleIdentifier: com.rhomobile.backsample
+  BundleURLScheme: backsample
+wp:
+  productid: 'fa42d3e0-a0cc-012e-a8b3-48bcc8a5d726'
+
+extensions: ["json", "another-extension"]
